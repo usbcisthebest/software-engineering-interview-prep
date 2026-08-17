@@ -24,7 +24,8 @@ git add sample.txt
 git commit -m "Initial commit: Add sample.txt"
 
 # Connect the local repository to the remote repository 
-# HTTPS example: https://github.com/username/my-great-project.git # # SSH example: git@github.com:username/my-great-project.git
+# HTTPS example: https://github.com/username/my-great-project.git 
+# SSH example: git@github.com:username/my-great-project.git
 git remote add origin YOUR_REMOTE_URL
 
 # Rename the current branch to main

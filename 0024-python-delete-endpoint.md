@@ -14,7 +14,7 @@ Add a `do_DELETE()` method that finds a book by ID and removes it.
 
 ### Solution
 
-```python id="7q2mxf"
+```python
 def do_DELETE(self):
     if self.path.startswith("/books/"):
 
@@ -40,13 +40,13 @@ A successful `DELETE` returns `204 No Content`.
 
 Delete book `2`:
 
-```bash id="k8v3nd"
+```bash
 curl -i -X DELETE http://localhost:8080/books/2
 ```
 
 You should receive:
 
-```text id="f4r9qw"
+```text
 HTTP/1.0 204 No Content
 ```
 
@@ -58,19 +58,19 @@ The book has now been removed from the server's `books` list.
 
 Try to fetch the deleted book:
 
-```bash id="m6x1pt"
+```bash
 curl -i http://localhost:8080/books/2
 ```
 
 You should receive:
 
-```text id="z3w7kc"
+```text
 HTTP/1.0 404 Not Found
 ```
 
 You can also check all books:
 
-```bash id="q9v5rm"
+```bash
 curl http://localhost:8080/books
 ```
 

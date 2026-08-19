@@ -18,7 +18,7 @@ Convert it to a JSON string and print the result and its type.
 
 ### Solution
 
-```python id="x3m8qa"
+```python
 import json
 
 book = {
@@ -35,7 +35,7 @@ print(type(json_string))
 
 Output:
 
-```text id="z7p2vk"
+```text
 {"id": 1, "title": "1984", "author": "George Orwell"}
 <class 'str'>
 ```
@@ -48,7 +48,7 @@ Output:
 
 Given this JSON string:
 
-```text id="m4q8tw"
+```text
 {"id": 1, "title": "1984", "author": "George Orwell"}
 ```
 
@@ -56,7 +56,7 @@ Convert it to a Python object and print the object and its type.
 
 ### Solution
 
-```python id="n6v3ry"
+```python
 import json
 
 json_string = '{"id": 1, "title": "1984", "author": "George Orwell"}'
@@ -69,7 +69,7 @@ print(type(book))
 
 Output:
 
-```text id="q9w5kp"
+```text
 {'id': 1, 'title': '1984', 'author': 'George Orwell'}
 <class 'dict'>
 ```
@@ -82,7 +82,7 @@ Output:
 
 Take this Python dictionary and save it to a file called `book.json`:
 
-```python id="r2k7mx"
+```python
 book = {
     "id": 2,
     "title": "Dune",
@@ -94,7 +94,7 @@ Then print the book and its type.
 
 ### Solution
 
-```python id="v8p4cz"
+```python
 import json
 
 book = {
@@ -116,7 +116,7 @@ with open("book.json", "w") as file:
 
 The file `book.json` contains:
 
-```json id="c7m2px"
+```json
 {
     "id": 2,
     "title": "Dune",
@@ -128,7 +128,7 @@ Read the file into Python and print the book and its type.
 
 ### Solution
 
-```python id="w4q8ns"
+```python
 import json
 
 with open("book.json", "r") as file:
@@ -140,7 +140,7 @@ print(type(book))
 
 Output:
 
-```text id="a3v6rk"
+```text
 {'id': 2, 'title': 'Dune', 'author': 'Frank Herbert'}
 <class 'dict'>
 ```

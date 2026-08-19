@@ -11,7 +11,7 @@ Create `server.py` with a server that listens on port `8080` and responds to `GE
 
 ### Solution
 
-```python id="y8w4kq"
+```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 
@@ -30,13 +30,13 @@ server.serve_forever()
 
 Start it:
 
-```bash id="x9p2mz"
+```bash
 python3 server.py
 ```
 
 You should see:
 
-```text id="q4n7vs"
+```text
 Server running on port 8080
 ```
 
@@ -52,13 +52,13 @@ Use `curl` to send a GET request to the server. Then create a Python HTTP client
 
 With `curl`:
 
-```bash id="s7k3wp"
+```bash
 curl -i http://localhost:8080
 ```
 
 You should see:
 
-```text id="c5m8rx"
+```text
 HTTP/1.0 200 OK
 ...
 
@@ -67,7 +67,7 @@ Hello from my server!
 
 Now create `client.py`:
 
-```python id="n2v6qh"
+```python
 from urllib.request import urlopen
 
 response = urlopen("http://localhost:8080")
@@ -78,13 +78,13 @@ print(response.read().decode())
 
 Run:
 
-```bash id="r4t9yk"
+```bash
 python3 client.py
 ```
 
 Output:
 
-```text id="j6p1wd"
+```text
 200
 Hello from my server!
 ```
@@ -101,19 +101,19 @@ Stop the HTTP server and verify that clients can no longer connect.
 
 In the server terminal, press:
 
-```text id="m8q3vz"
+```text
 Ctrl+C
 ```
 
 Then try:
 
-```bash id="k5w2rx"
+```bash
 curl http://localhost:8080
 ```
 
 or:
 
-```bash id="b7n4yp"
+```bash
 python3 client.py
 ```
 

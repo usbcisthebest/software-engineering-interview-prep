@@ -16,7 +16,7 @@ Create a Python book, convert it to a JSON string, encode it into bytes, then de
 
 ### Solution
 
-```python id="7h3m1q"
+```python
 import json
 
 book = {
@@ -40,7 +40,7 @@ print(type(json_string))
 
 Output:
 
-```text id="2p8v6k"
+```text
 {"id": 1, "title": "1984"}
 b'{"id": 1, "title": "1984"}'
 <class 'str'>
@@ -61,7 +61,7 @@ Modify the HTTP server so that it converts a Python book into JSON and then into
 
 ### Solution
 
-```python id="m4q7zw"
+```python
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -92,19 +92,19 @@ server.serve_forever()
 
 Start the server:
 
-```bash id="q8x2nc"
+```bash
 python3 server.py
 ```
 
 Then:
 
-```bash id="v5m9kp"
+```bash
 curl http://localhost:8080
 ```
 
 Output:
 
-```text id="z3w6rs"
+```text
 {"id": 1, "title": "1984"}
 ```
 
@@ -118,7 +118,7 @@ Using a Python HTTP client, request the book from the server and convert the res
 
 ### Solution
 
-```python id="b6k2mt"
+```python
 import json
 from urllib.request import urlopen
 
@@ -134,7 +134,7 @@ print(type(book))
 
 Output:
 
-```text id="r9v4qx"
+```text
 {'id': 1, 'title': '1984'}
 <class 'dict'>
 ```

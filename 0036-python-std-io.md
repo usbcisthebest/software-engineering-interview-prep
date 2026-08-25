@@ -1,5 +1,3 @@
-Yes. I'd reorder the lesson so it progresses from **interactive input → multiple input → arguments → pipes/files → direct stdin/stdout**.
-
 ## Task 1: Read a value from standard input
 
 Write a program that asks the user for their name and prints a greeting.

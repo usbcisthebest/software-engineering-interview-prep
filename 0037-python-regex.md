@@ -1,5 +1,3 @@
-Great next topic. We can keep it beginner-friendly and practical, with tasks increasing from simple pattern matching to extracting and validating real-world data.
-
 ## Task 1: Check whether text contains a word
 
 A log message may contain the word `ERROR`. Check whether the word appears in the message.
